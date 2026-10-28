@@ -1,9 +1,0 @@
-name: Push Event
-on: push
-jobs:
-show-info: 
-  runs-on: ubuntu-latest
-  steps:
-  - name: Info
-  run: |
-  echo "This is my first github actions using yaml"
