@@ -1,13 +1,13 @@
-name: Push Event
+name: Manual Workflow
 on: 
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch:
      
 jobs:
-  show-info: 
+  run-manual-task: 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
       - name: Info
         run: |
-          echo "Cron Job Worked!"
+          echo "Running Manual Task"
