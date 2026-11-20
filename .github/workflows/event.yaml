@@ -1,7 +1,8 @@
 name: Trigger on Push Event
 on: 
-  schedule:
-    - cron: '*/10 * * * *'
+  issues:
+    types: 
+    - opened
 jobs: 
   show-info:
     runs-on: ubuntu-latest
