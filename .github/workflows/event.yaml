@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Info
         run: |
-          echo "This event is trigger when their was an push event"
+          echo "Trigger when their was an push event"
