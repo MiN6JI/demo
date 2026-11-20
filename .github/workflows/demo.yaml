@@ -1,17 +1,13 @@
-name: Manual Workflow
+name: Manual Work
 on: 
   workflow_dispatch: 
-    inputs:
-      param1:
-        description: 'Description for param1'
-        required: true
-        default: 'Hello world'
 jobs:
-  run-manual-task: 
+  run-manual-task:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Info
-        run: |
-          echo "Running manual task with ${{github.event.inputs.param1}}"
+        - name: Checkout Respository
+          uses: actions/checkout@v4
+        - name: Info
+          run: |
+            echo "Running Manually"
+  
